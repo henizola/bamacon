@@ -2,7 +2,52 @@
   <head>
     <meta charset="UTF-8" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+<style>
+  #ourclients {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background:#f9f9f9;
+  padding-bottom:30px;
+  height:150px;
+}
+#ourclients .clients-wrap {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#ourclients .clients-wrap ul {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ourclients .clients-wrap ul li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 220px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+#ourclients .clients-wrap ul li img {
+  vertical-align: middle;
+  max-width: 100%;
+  width:150px;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  -moz-transition: 0 linear left;
+  transition: 0 linear left;
+}
+#ourclients h3{
+border-bottom:2px solid #3399ff;
+width:150px;
+padding:10px;
+}
+</style>
     <style data-tippy-stylesheet="">
       .tippy-box[data-animation="fade"][data-state="hidden"] {
         opacity: 0;
@@ -6735,11 +6780,7 @@
                             data-widget_type="heading.default"
                           >
                             <div class="elementor-widget-container">
-                              <h5
-                                class="elementor-heading-title elementor-size-default"
-                              >
-                                Our team
-                              </h5>
+                            
                             </div>
                           </div>
                           <div
@@ -6752,7 +6793,7 @@
                               <h3
                                 class="elementor-heading-title elementor-size-default"
                               >
-                                Our Big Community
+                               Message from the CEO
                               </h3>
                             </div>
                           </div>
@@ -6766,10 +6807,7 @@
                               <div
                                 class="elementor-text-editor elementor-clearfix"
                               >
-                                Meet our talented, skilled and friendly team!
-                                These are people who create all our projects.
-                                Together we do one major and important job –
-                                design, construction and building for people.
+                               
                               </div>
                             </div>
                           </div>
@@ -6795,7 +6833,7 @@
                             >
                               <div class="elementor-row">
                                 <div
-                                  class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e7dd50b"
+                                  class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e7dd50b"
                                   data-id="e7dd50b"
                                   data-element_type="column"
                                 >
@@ -6823,51 +6861,32 @@
                                                   <div
                                                     class="jet-team-member__cover"
                                                   ></div>
-                                                  <figure
-                                                    class="jet-team-member__figure"
-                                                  >
+                                                  <div style="display: flex; align-items:start;">
                                                     <img
-                                                      width="470"
-                                                      height="470"
-                                                      src="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6.jpg"
-                                                      class="jet-team-member__img-tag"
-                                                      alt="Team Meber"
-                                                      decoding="async"
-                                                      loading="lazy"
-                                                      srcset="
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6.jpg         470w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-300x300.jpg 300w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-150x150.jpg 150w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-460x460.jpg 460w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-104x104.jpg 104w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-370x370.jpg 370w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-75x75.jpg    75w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-270x270.jpg 270w
-                                                      "
-                                                      sizes="(max-width: 470px) 100vw, 470px"
-                                                    />
-                                                  </figure>
-                                                </div>
-                                                <div
+                                                    width="470"
+                                                    height="470"
+                                                    src="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6.jpg"
+                                                    class="jet-team-member__img-tag"
+                                                    alt="Team Meber"
+                                                    style="height: 400px; width:auto"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    srcset="
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6.jpg         470w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-300x300.jpg 300w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-150x150.jpg 150w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-460x460.jpg 460w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-104x104.jpg 104w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-370x370.jpg 370w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-75x75.jpg    75w,
+                                                      https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team6-270x270.jpg 270w
+                                                    "
+                                                    sizes="(max-width: 470px) 100vw, 470px"
+                                                  /> <div
+                                                  style="margin-left:50px; "
                                                   class="jet-team-member__content"
                                                 >
-                                                  <h3
-                                                    class="jet-team-member__name"
-                                                  >
-                                                    <span
-                                                      class="jet-team-member__name-first"
-                                                      ><a href="#"
-                                                        >Steven Jackson</a
-                                                      ></span
-                                                    >
-                                                  </h3>
-                                                  <div
-                                                    class="jet-team-member__position"
-                                                  >
-                                                    <span
-                                                      >Executive Manager</span
-                                                    >
-                                                  </div>
+                                                 
                                                   <p
                                                     class="jet-team-member__desc"
                                                   >
@@ -6880,328 +6899,52 @@
                                                     inventore laboriosam,
                                                     dolorem beatae maxime
                                                     possimus nulla saepe.
-                                                  </p>
-                                                  <div
-                                                    class="jet-team-member__socials"
-                                                  >
-                                                    <div
-                                                      class="jet-team-member__socials-item"
-                                                    >
-                                                      <a
-                                                        href="#"
-                                                        aria-label="Twitter"
-                                                      ></a>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b456088"
-                                  data-id="b456088"
-                                  data-element_type="column"
-                                >
-                                  <div
-                                    class="elementor-column-wrap elementor-element-populated"
-                                  >
-                                    <div class="elementor-widget-wrap">
-                                      <div
-                                        class="elementor-element elementor-element-6dcb6f9 elementor-widget elementor-widget-jet-team-member is-mac"
-                                        data-id="6dcb6f9"
-                                        data-element_type="widget"
-                                        data-widget_type="jet-team-member.default"
-                                      >
-                                        <div class="elementor-widget-container">
-                                          <div
-                                            class="elementor-jet-team-member jet-elements"
-                                          >
-                                            <div class="jet-team-member">
-                                              <div
-                                                class="jet-team-member__inner"
-                                              >
-                                                <div
-                                                  class="jet-team-member__image"
-                                                >
-                                                  <div
-                                                    class="jet-team-member__cover"
-                                                  ></div>
-                                                  <figure
-                                                    class="jet-team-member__figure"
-                                                  >
-                                                    <img
-                                                      width="470"
-                                                      height="470"
-                                                      src="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5.jpg"
-                                                      class="jet-team-member__img-tag"
-                                                      alt="Team Meber"
-                                                      decoding="async"
-                                                      loading="lazy"
-                                                      srcset="
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5.jpg         470w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-300x300.jpg 300w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-150x150.jpg 150w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-460x460.jpg 460w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-104x104.jpg 104w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-370x370.jpg 370w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-75x75.jpg    75w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team5-270x270.jpg 270w
-                                                      "
-                                                      sizes="(max-width: 470px) 100vw, 470px"
-                                                    />
-                                                  </figure>
-                                                </div>
-                                                <div
-                                                  class="jet-team-member__content"
-                                                >
-                                                  <h3
-                                                    class="jet-team-member__name"
-                                                  >
-                                                    <span
-                                                      class="jet-team-member__name-first"
-                                                      ><a href="#"
-                                                        >Frank Roberts</a
-                                                      ></span
-                                                    >
-                                                  </h3>
-                                                  <div
-                                                    class="jet-team-member__position"
-                                                  >
-                                                    <span>Senior Foreman</span>
-                                                  </div>
-                                                  <p
-                                                    class="jet-team-member__desc"
-                                                  >
-                                                    Lorem ipsum, dolor sit amet
+                                                    Lorem, ipsum dolor sit amet
                                                     consectetur adipisicing
-                                                    elit. Libero, beatae in!
-                                                    Placeat ea illum impedit
-                                                    rerum ratione? Nesciunt, ab
-                                                    velit doloremque veniam
-                                                    optio totam, est nihil
-                                                    delectus, tempore soluta
-                                                    vitae!
-                                                  </p>
-                                                  <div
-                                                    class="jet-team-member__socials"
-                                                  >
-                                                    <div
-                                                      class="jet-team-member__socials-item"
-                                                    >
-                                                      <a
-                                                        href="#"
-                                                        aria-label="Twitter"
-                                                      ></a>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-98b2c08"
-                                  data-id="98b2c08"
-                                  data-element_type="column"
-                                >
-                                  <div
-                                    class="elementor-column-wrap elementor-element-populated"
-                                  >
-                                    <div class="elementor-widget-wrap">
-                                      <div
-                                        class="elementor-element elementor-element-f0c5e40 elementor-widget elementor-widget-jet-team-member is-mac"
-                                        data-id="f0c5e40"
-                                        data-element_type="widget"
-                                        data-widget_type="jet-team-member.default"
-                                      >
-                                        <div class="elementor-widget-container">
-                                          <div
-                                            class="elementor-jet-team-member jet-elements"
-                                          >
-                                            <div class="jet-team-member">
-                                              <div
-                                                class="jet-team-member__inner"
-                                              >
-                                                <div
-                                                  class="jet-team-member__image"
-                                                >
-                                                  <div
-                                                    class="jet-team-member__cover"
-                                                  ></div>
-                                                  <figure
-                                                    class="jet-team-member__figure"
-                                                  >
-                                                    <img
-                                                      width="470"
-                                                      height="470"
-                                                      src="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7.jpg"
-                                                      class="jet-team-member__img-tag"
-                                                      alt="Team Meber"
-                                                      decoding="async"
-                                                      loading="lazy"
-                                                      srcset="
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7.jpg         470w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-300x300.jpg 300w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-150x150.jpg 150w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-460x460.jpg 460w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-104x104.jpg 104w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-370x370.jpg 370w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-75x75.jpg    75w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team7-270x270.jpg 270w
-                                                      "
-                                                      sizes="(max-width: 470px) 100vw, 470px"
-                                                    />
-                                                  </figure>
-                                                </div>
-                                                <div
-                                                  class="jet-team-member__content"
-                                                >
-                                                  <h3
-                                                    class="jet-team-member__name"
-                                                  >
-                                                    <span
-                                                      class="jet-team-member__name-first"
-                                                      ><a href="#"
-                                                        >Andrew Rooney</a
-                                                      ></span
-                                                    >
-                                                  </h3>
-                                                  <div
-                                                    class="jet-team-member__position"
-                                                  >
-                                                    <span
-                                                      >Remodeling
-                                                      Consultant</span
-                                                    >
-                                                  </div>
-                                                  <p
-                                                    class="jet-team-member__desc"
-                                                  >
-                                                    Lorem ipsum, dolor sit amet
+                                                    elit. Totam modi perferendis
+                                                    error ipsum, debitis
+                                                    voluptatum natus sunt libero
+                                                    quasi corrupti? Fuga numquam
+                                                    inventore laboriosam,
+                                                    dolorem beatae maxime
+                                                    possimus nulla saepe.
+                                                    Lorem, ipsum dolor sit amet
                                                     consectetur adipisicing
-                                                    elit. Vitae eveniet quo quas
-                                                    architecto, tempore
-                                                    provident nihil vero ipsa
-                                                    rem, laudantium illum.
-                                                    Praesentium hic amet, iusto
-                                                    expedita maiores enim itaque
-                                                    laborum.
-                                                  </p>
-                                                  <div
-                                                    class="jet-team-member__socials"
-                                                  >
-                                                    <div
-                                                      class="jet-team-member__socials-item"
-                                                    >
-                                                      <a
-                                                        href="#"
-                                                        aria-label="Twitter"
-                                                      ></a>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-de53356"
-                                  data-id="de53356"
-                                  data-element_type="column"
-                                >
-                                  <div
-                                    class="elementor-column-wrap elementor-element-populated"
-                                  >
-                                    <div class="elementor-widget-wrap">
-                                      <div
-                                        class="elementor-element elementor-element-3fe0322 elementor-widget elementor-widget-jet-team-member is-mac"
-                                        data-id="3fe0322"
-                                        data-element_type="widget"
-                                        data-widget_type="jet-team-member.default"
-                                      >
-                                        <div class="elementor-widget-container">
-                                          <div
-                                            class="elementor-jet-team-member jet-elements"
-                                          >
-                                            <div class="jet-team-member">
-                                              <div
-                                                class="jet-team-member__inner"
-                                              >
-                                                <div
-                                                  class="jet-team-member__image"
-                                                >
-                                                  <div
-                                                    class="jet-team-member__cover"
-                                                  ></div>
-                                                  <figure
-                                                    class="jet-team-member__figure"
-                                                  >
-                                                    <img
-                                                      width="470"
-                                                      height="470"
-                                                      src="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8.jpg"
-                                                      class="jet-team-member__img-tag"
-                                                      alt="Team Meber"
-                                                      decoding="async"
-                                                      loading="lazy"
-                                                      srcset="
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8.jpg         470w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-300x300.jpg 300w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-150x150.jpg 150w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-460x460.jpg 460w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-104x104.jpg 104w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-370x370.jpg 370w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-75x75.jpg    75w,
-                                                        https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2017/12/architect-team8-270x270.jpg 270w
-                                                      "
-                                                      sizes="(max-width: 470px) 100vw, 470px"
-                                                    />
-                                                  </figure>
-                                                </div>
-                                                <div
-                                                  class="jet-team-member__content"
-                                                >
-                                                  <h3
-                                                    class="jet-team-member__name"
-                                                  >
-                                                    <span
-                                                      class="jet-team-member__name-first"
-                                                      ><a href="#"
-                                                        >Nick Holmes</a
-                                                      ></span
-                                                    >
-                                                  </h3>
-                                                  <div
-                                                    class="jet-team-member__position"
-                                                  >
-                                                    <span>Project Manager</span>
-                                                  </div>
-                                                  <p
-                                                    class="jet-team-member__desc"
-                                                  >
-                                                    Lorem ipsum, dolor sit amet
+                                                    elit. Totam modi perferendis
+                                                    error ipsum, debitis
+                                                    voluptatum natus sunt libero
+                                                    quasi corrupti? Fuga numquam
+                                                    inventore laboriosam,
+                                                    dolorem beatae maxime
+                                                    possimus nulla saepe.
+                                                    Lorem, ipsum dolor sit amet
                                                     consectetur adipisicing
-                                                    elit. Impedit nihil alias
-                                                    quasi optio sapiente cumque
-                                                    a aut vel, expedita debitis
-                                                    culpa, cum, accusamus fugit
-                                                    tenetur consectetur
-                                                    molestias laborum
-                                                    dignissimos recusandae?
+                                                    elit. Totam modi perferendis
+                                                    error ipsum, debitis
+                                                    voluptatum natus sunt libero
+                                                    quasi corrupti? Fuga numquam
+                                                    inventore laboriosam,
+                                                    dolorem beatae maxime
+                                                    possimus nulla saepe.
+
                                                   </p>
+                                                  <h3
+                                                  class="jet-team-member__name"
+                                                >
+                                                  <span
+                                                    class="jet-team-member__name-first"
+                                                    ><a href="#"
+                                                      >Jhon</a
+                                                    ></span
+                                                  >
+                                                </h3>
+                                                <div
+                                                  class="jet-team-member__position"
+                                                >
+                                                  <span
+                                                    >Executive Manager</span
+                                                  >
+                                                </div>
                                                   <div
                                                     class="jet-team-member__socials"
                                                   >
@@ -7215,6 +6958,11 @@
                                                     </div>
                                                   </div>
                                                 </div>
+                                                </div>
+                                               
+                                                  </div>
+                                                 
+                                             
                                               </div>
                                             </div>
                                           </div>
@@ -7223,6 +6971,7 @@
                                     </div>
                                   </div>
                                 </div>
+                               
                               </div>
                             </div>
                           </section>
@@ -7362,6 +7111,35 @@
                   </div>
                 </div>
               </section>
+
+<div id="ourclients" style="margin-bottom: 100px; height:fit-content">
+<center><h3>Our Partners</h3></center>
+  <div class="clients-wrap">
+    <ul id="clientlogo" class="clearfix">
+      <li>
+        <img src="https://i.ibb.co/N92D9G3/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/jkSTBVP/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-2-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/KNFTLHv/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-1.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+      </li>
+     <li>
+     </li>
+    </ul>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
@@ -7835,6 +7613,8 @@
       }
       CxCSSCollector();
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <script
       type="text/javascript"
       src="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-includes/js/hoverIntent.min.js?ver=1.10.2"
@@ -8218,5 +7998,38 @@
                   e);
       })();
     </script>
+    <script>
+      $(function() {
+        var $clientslider = $('#clientlogo');
+        var clients = $clientslider.children().length;
+        var clientwidth = (clients * 220); 
+        $clientslider.css('width', clientwidth);
+        var rotating = true;
+        var clientspeed = 1800;
+        var seeclients = setInterval(rotateClients, clientspeed);
+        $(document).on({
+          mouseenter: function() {
+            rotating = false;
+          },
+          mouseleave: function() {
+            rotating = true;
+          }
+        }, '#ourclients');
+        function rotateClients() {
+          if (rotating != false) {
+            var $first = $('#clientlogo li:first');
+            $first.animate({
+              'margin-left': '-220px'
+            }, 2000, function() {
+              $first.remove().css({
+                'margin-left': '0px'
+              });
+              $('#clientlogo li:last').after($first);
+            });
+          }
+        }
+      });
+    </script>
+    
   </body>
 </html>
