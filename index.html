@@ -117,17 +117,7 @@
 		src='https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-includes/js/jquery/jquery.min.js?ver=3.6.4'
 		id='jquery-core-js'></script>
 	<style>
-		#box2 {
-			height: 100vh;
-			width: 100%;
-			padding-top: 30vh;
-			background-image: url(./assets/addis.jpg);
-			background-size: cover;
-			background-position: bottom left;
-			display: table;
-			background-attachment: fixed;
-		}
-
+		
 		.float {
 			position: fixed;
 			width: 60px;
@@ -177,7 +167,30 @@
 		href="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2018/01/cropped-fav-3-180x180.png" />
 	<meta name="msapplication-TileImage"
 		content="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/wp-content/uploads/2018/01/cropped-fav-3-270x270.png" />
-</head>
+
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+	  />
+	  <link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+	  />
+	  <style>
+		.slider {
+		  margin: 0;
+		}
+		.item {
+		  text-align: center;
+		  padding: 0px;
+		}
+		.item img {
+		  width: 100%;
+		  height: 100vh;
+		  object-fit: cover;
+		}
+	  </style>
+	</head>
 
 <body
 	class="home page-template page-template-elementor_header_footer page page-id-9 jet-theme-core jet-theme-core--has-template jet-theme-core--has-header jet-theme-core--has-body jet-theme-core--has-footer layout-fullwidth blog-grid jet-desktop-menu-active elementor-default elementor-template-full-width elementor-kit-2780 elementor-page elementor-page-9">
@@ -412,12 +425,39 @@
 					<div class="elementor-section-wrap">
 
 						<div id="box2">
-							<section style="padding-left: 15%;"
+							<!-- <section style="padding-left: 15%;"
 								class="elementor-section elementor-inner-section elementor-element elementor-element-024fc26 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
 								data-id="024fc26" data-element_type="section" data-settings="{"
 								jet_parallax_layout_list":[{"jet_parallax_layout_image":{"url":"","id":"","size":""},"_id":"23216bb","jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}">
+								 -->
+								<div class="slider owl-carousel">
+									<div class="item">
+									  <img src="./banner-1.jpg" alt="Image 1" />
+									  <div  style="position: absolute; top:30%;left:10vw;text-align:left; ">
+										<h1 class="elementor-heading-title elementor-size-default" style="color:#fab837;font-weight: 600; font-size:60px">
+											Gateway ,
+											<br> to a
+											new life.
+										</h1>
+									  
+									
+										<div class="elementor-text-editor elementor-clearfix" style="font-size: 15px; max-width:50%;color:white;margin-top:20px">
+											Discover your perfect home from our
+											extensive
+											listings. Whether you're seeking a
+											cozy apartment in
+											the city's heart we have something
+											for everyone </div>
+									  </div>
+									 
+								</div>
+									</div>
+								
+								  </div>
 								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
+									
+									
+									<!-- <div class="elementor-row">
 										<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e6c9316"
 											data-id="e6c9316" data-element_type="column">
 											<div class="elementor-column-wrap elementor-element-populated">
@@ -514,9 +554,9 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
-							</section>
+							<!-- </section> -->
 						</div>
 
 
@@ -2944,6 +2984,19 @@ Anything Into Reality with Expertise, Passion, and Commitment.
 		setInterval(changeImage, 4000);
 
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          items: 1,
+        });
+      });
+    </script>
 </body>
 
 </html>
