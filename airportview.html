@@ -332,6 +332,107 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
 
+    <style>
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .main {
+        display: grid;
+      grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .gallery {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+      }
+
+      .gallery__image {
+        flex: 1;
+        min-width: 300px;
+        width: 100%;
+      }
+
+      .gallery__image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+      }
+
+    
+
+.details {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+  position: sticky;
+  top: 20px; /* Adjust the top position as needed */
+}
+
+
+      .details h2 {
+        margin-top: 0;
+      }
+
+      .details p {
+        line-height: 1.6;
+      }
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      .modal-content {
+        position: relative;
+        background-color: #fff;
+        padding: 0px;
+        border-radius: 10px;
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      .modal-content img {
+        width: auto;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+
     <style data-tippy-stylesheet="">
       .tippy-box[data-animation='fade'][data-state='hidden'] {
         opacity: 0;
@@ -4995,91 +5096,46 @@
                             data-settings='{"columns":"1","columns_tablet":"1"}'
                             data-widget_type="jet-portfolio.default"
                           >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-jet-portfolio jet-elements">
-                                <div
-                                  class="jet-portfolio layout-type-grid preset-type-3 layout-desktop-column-1 layout-tablet-column-1"
-                                  data-settings='{"layoutType":"grid","perPage":6}'
-                                >
-                                  <div class="jet-portfolio__list">
-                                    <article
-                                      class="jet-portfolio__item visible-status item-loaded"
-                                      data-slug='{"0":"all"}'
-                                    >
-                                      <div
-                                        class="jet-portfolio__inner"
-                                        style="opacity: 1; transform: scale(1)"
-                                      >
-                                        <a
-                                          class="jet-portfolio__link"
-                                          href="./assets/Air port view/1.jpg"
-                                          data-elementor-open-lightbox="yes"
-                                          data-elementor-lightbox-slideshow="481165d-all"
-                                        >
-                                          <div class="jet-portfolio__image">
-                                            <img
-                                              decoding="async"
-                                              class="jet-portfolio__image-instance"
-                                              src="./assets/Air port view/1.jpg"
-                                              width="1170"
-                                              height="800"
-                                              alt="Shreveport, Bossier City"
-                                              loading="lazy"
-                                            />
-
-                                            <div class="jet-portfolio__cover">
-                                              <span class="jet-elements-icon"
-                                                ><i
-                                                  class="fa fa-plus"
-                                                  aria-hidden="true"
-                                                ></i
-                                              ></span>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </article>
-                                    <article
-                                      class="jet-portfolio__item visible-status item-loaded"
-                                      data-slug='{"0":"all"}'
-                                    >
-                                      <div
-                                        class="jet-portfolio__inner"
-                                        style="opacity: 1; transform: scale(1)"
-                                      >
-                                        <a
-                                          class="jet-portfolio__link"
-                                          href="./assets/Air port view/2.jpg"
-                                          data-elementor-open-lightbox="yes"
-                                          data-elementor-lightbox-slideshow="481165d-all"
-                                        >
-                                          <div class="jet-portfolio__image">
-                                            <img
-                                              decoding="async"
-                                              class="jet-portfolio__image-instance"
-                                              src="./assets/Air port view/2.jpg"
-                                              width="1170"
-                                              height="1200"
-                                              alt="Project Image"
-                                              loading="lazy"
-                                            />
-
-                                            <div class="jet-portfolio__cover">
-                                              <span class="jet-elements-icon"
-                                                ><i
-                                                  class="fa fa-plus"
-                                                  aria-hidden="true"
-                                                ></i
-                                              ></span>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </article>
-                                  </div>
-                                </div>
+                          <main class="main">
+                            <section class="gallery">
+                              <div class="gallery__image">
+                                <img src="./assets/Air port view/1.jpg" alt="3D Design" />
                               </div>
-                            </div>
+                              <div class="gallery__image">
+                                <img src="./assets/Air port view/2.jpg" alt="Construction Progress" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/Air port view/airport-1.jpg" alt="3D Design" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/Air port view/airport-2.jpg" alt="Construction Progress" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-01.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-02.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-03.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-04.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-05.jpg" alt="Interior View" />
+                              </div>
+                            </section>
+                            <section class="details">
+                              <h2>Project Details</h2>
+                              <p>
+                                This real estate project is a state-of-the-art development featuring
+                                modern architecture and luxurious interiors. The project is
+                                currently in progress with significant advancements made from the
+                                initial 3D design to the current construction phase.
+                              </p>
+                            </section>
+                          </main>
                           </div>
                         </div>
                       </div>
@@ -5087,175 +5143,7 @@
                   </div>
                 </div>
               </section>
-              <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-76bbd45 elementor-section-boxed elementor-section-height-default elementor-section-height-default jet-parallax-section"
-                data-id="76bbd45"
-                data-element_type="section"
-                data-settings='{"jet_parallax_layout_list":[{"jet_parallax_layout_image":{"url":"","id":"","size":""},"_id":"fcd2a71","jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'
-              >
-                <div
-                  class="jet-parallax-section__layout elementor-repeater-item-fcd2a71 jet-parallax-section__scroll-layout is-mac"
-                >
-                  <div
-                    class="jet-parallax-section__image"
-                    style="
-                      background-position: 50% 50%;
-                      background-image: url('');
-                    "
-                  ></div>
-                </div>
-                <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                    <div
-                      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a1e8e18"
-                      data-id="a1e8e18"
-                      data-element_type="column"
-                    >
-                      <div
-                        class="elementor-column-wrap elementor-element-populated"
-                      >
-                        <div class="elementor-widget-wrap">
-                          <div
-                            class="elementor-element elementor-element-29bdcdf elementor-widget elementor-widget-heading is-mac"
-                            data-id="29bdcdf"
-                            data-element_type="widget"
-                            data-widget_type="heading.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <h2
-                                class="elementor-heading-title elementor-size-default"
-                              >
-                                Description
-                              </h2>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-0ba19d0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider is-mac"
-                            data-id="0ba19d0"
-                            data-element_type="widget"
-                            data-widget_type="divider.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                <span class="elementor-divider-separator">
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-aa24a91 elementor-widget elementor-widget-text-editor is-mac"
-                            data-id="aa24a91"
-                            data-element_type="widget"
-                            data-widget_type="text-editor.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div
-                                class="elementor-text-editor elementor-clearfix"
-                              >
-                              our building is B+G+10+T height include two luxurious apartments per floor. standby generator, Reception, sufficient water tanker with its water pump, parking, CCTV and and many more are part of the apartment.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6337138"
-                      data-id="6337138"
-                      data-element_type="column"
-                    >
-                      <div
-                        class="elementor-column-wrap elementor-element-populated"
-                      >
-                        <div class="elementor-widget-wrap">
-                          <div
-                            class="elementor-element elementor-element-bb8462e elementor-widget elementor-widget-heading is-mac"
-                            data-id="bb8462e"
-                            data-element_type="widget"
-                            data-widget_type="heading.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <h3
-                                class="elementor-heading-title elementor-size-default"
-                              >
-                                Project details
-                              </h3>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-541cdf1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider is-mac"
-                            data-id="541cdf1"
-                            data-element_type="widget"
-                            data-widget_type="divider.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                <span class="elementor-divider-separator">
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-d96ee66 elementor-widget elementor-widget-text-editor is-mac"
-                            data-id="d96ee66"
-                            data-element_type="widget"
-                            data-widget_type="text-editor.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div
-                                class="elementor-text-editor elementor-clearfix"
-                              >
-                                <p>
-                                  <span style="color: #222931">Client:</span>
-                                  Bamacon Real Estate<br />
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-4ff6f38 elementor-widget__width-inherit elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-jet-button is-mac"
-                            data-id="4ff6f38"
-                            data-element_type="widget"
-                            data-widget_type="jet-button.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-jet-button jet-elements">
-                                <div class="jet-button__container">
-                                  <a
-                                    class="jet-button__instance jet-button__instance--icon-left hover-effect-1"
-                                    href="#"
-                                  >
-                                    <div
-                                      class="jet-button__plane jet-button__plane-normal"
-                                    ></div>
-                                    <div
-                                      class="jet-button__plane jet-button__plane-hover"
-                                    ></div>
-
-                                    <div
-                                      class="jet-button__state jet-button__state-hover"
-                                    >
-                                      <span
-                                        class="jet-button__icon jet-elements-icon"
-                                        ><i
-                                          aria-hidden="true"
-                                          class="fas fa-link"
-                                        ></i></span
-                                      ><span class="jet-button__label"
-                                        >Project link</span
-                                      >
-                                    </div>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+            
             </div>
           </div>
         </div>
@@ -6017,6 +5905,34 @@
         },
       };
       /* ]]> */
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.gallery__image img');
+
+        images.forEach((image) => {
+          image.addEventListener('click', () => {
+            const src = image.getAttribute('src');
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+
+            const modalContent = `
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="${src}" alt="Image" style="height:">
+          </div>
+        `;
+
+            modal.innerHTML = modalContent;
+            document.body.appendChild(modal);
+
+            const closeBtn = modal.querySelector('.close-btn');
+            closeBtn.addEventListener('click', () => {
+              document.body.removeChild(modal);
+            });
+          });
+        });
+      });
     </script>
     <script
       type="text/javascript"

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      .main {
+        padding: 20px;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .tab {
+        padding: 10px 20px;
+        border: none;
+        background-color: #ddd;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .tab.active {
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .project {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+      }
+
+      .project h2 {
+        margin-top: 0;
+      }
+
+      .project:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Real Estate Projects</h1>
+      </header>
+      <main class="main">
+        <div class="tabs">
+          <button class="tab" data-filter="all">All</button>
+          <button class="tab" data-filter="completed">Completed</button>
+          <button class="tab" data-filter="under-construction">
+            Under Construction
+          </button>
+          <button class="tab" data-filter="upcoming">Upcoming</button>
+        </div>
+        <section class="projects">
+          <div class="project" data-category="completed">
+            <h2>Project 1</h2>
+            <p>Status: Completed</p>
+          </div>
+          <div class="project" data-category="under-construction">
+            <h2>Project 2</h2>
+            <p>Status: Under Construction</p>
+          </div>
+          <div class="project" data-category="upcoming">
+            <h2>Project 3</h2>
+            <p>Status: Upcoming</p>
+          </div>
+          <div class="project" data-category="completed">
+            <h2>Project 4</h2>
+            <p>Status: Completed</p>
+          </div>
+          <div class="project" data-category="under-construction">
+            <h2>Project 5</h2>
+            <p>Status: Under Construction</p>
+          </div>
+          <div class="project" data-category="upcoming">
+            <h2>Project 6</h2>
+            <p>Status: Upcoming</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('.tab');
+        const projects = document.querySelectorAll('.project');
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const filter = tab.getAttribute('data-filter');
+
+            tabs.forEach((t) => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            projects.forEach((project) => {
+              if (
+                filter === 'all' ||
+                project.getAttribute('data-category') === filter
+              ) {
+                project.style.display = 'block';
+              } else {
+                project.style.display = 'none';
+              }
+            });
+          });
+        });
+
+        // Trigger click on the 'All' tab to show all projects on page load
+        document.querySelector('.tab[data-filter="all"]').click();
+      });
+    </script>
+  </body>
+</html>
