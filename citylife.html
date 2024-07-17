@@ -332,6 +332,107 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
 
+    <style>
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .main {
+        display: grid;
+      grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .gallery {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+      }
+
+      .gallery__image {
+        flex: 1;
+        min-width: 300px;
+        width: 100%;
+      }
+
+      .gallery__image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+      }
+
+    
+
+.details {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+height:fit-content;
+  overflow-y: auto;
+  position: sticky;
+  top: 20px; /* Adjust the top position as needed */
+}
+
+
+      .details h2 {
+        margin-top: 0;
+      }
+
+      .details p {
+        line-height: 1.6;
+      }
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      .modal-content {
+        position: relative;
+        background-color: #fff;
+        padding: 0px;
+        border-radius: 10px;
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      .modal-content img {
+        width: auto;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+
     <style data-tippy-stylesheet="">
       .tippy-box[data-animation='fade'][data-state='hidden'] {
         opacity: 0;
@@ -413,7 +514,7 @@
       href="https://ld-wp73.template-help.com/wordpress/prod_14993/v3/xmlrpc.php"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CITY LIFE APARTMENT(KAZANCHIS)</title>
+    <title>Air port view</title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link
@@ -1111,7 +1212,7 @@
         color: #ffffff;
       }
       .accent_color {
-        color: #fab837;
+        color: #ef9410;
       }
       .page-id-3453 .site-content {
         padding-top: 60px;
@@ -1130,7 +1231,7 @@
         color: #aeb6be;
       }
       .dropcaps {
-        background-color: #fab837;
+        background-color: #ef9410;
         color: #f7f7f7;
         font-size: 1.46667rem;
         font-weight: 600;
@@ -1166,17 +1267,17 @@
       .main-navigation .current-menu-item > a,
       .main-navigation .current_page_ancestor > a,
       .main-navigation .current-menu-ancestor > a {
-        color: #fab837;
+        color: #ef9410;
       } /* #Mobile Menu */
       .mobile-menu-toggle-button {
         color: #222931;
-        background-color: #fab837;
+        background-color: #ef9410;
       } /* #Social */
       .social-list a {
         color: #42474c;
       }
       .social-list a:hover {
-        color: #fab837;
+        color: #ef9410;
       } /* #Share btns */
       .share-btns__link:hover {
         color: #ffffff;
@@ -1274,7 +1375,7 @@
       }
       #toTop:hover {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       } /* #Button Appearance Styles (regular scheme) */
       .btn,
       .btn-text-icon,
@@ -1300,15 +1401,15 @@
       input[type='submit']:hover,
       input[type='reset']:hover {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .btn.invert-button {
         color: #ffffff;
       }
       .btn.invert-button:hover {
         color: #ffffff;
-        border-color: #fab837;
-        background-color: #fab837;
+        border-color: #ef9410;
+        background-color: #ef9410;
       }
       input,
       optgroup,
@@ -1332,7 +1433,7 @@
       .wpcf7-submit:hover,
       .post-password-form label + input:hover {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       } /* Cookies consent */
       .comment-form-cookies-consent
         input[type='checkbox']:checked
@@ -1426,7 +1527,7 @@
       }
       .cat-links a:hover {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .posted-on i,
       .comments-button i,
@@ -1435,7 +1536,7 @@
       }
       .btn-style .post-categories a {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .btn-style .post-categories a:hover {
         color: #ffffff;
@@ -1486,7 +1587,7 @@
       .invert-hover.has-post-thumbnail:hover .btn-icon:hover,
       .invert-item.has-post-thumbnail a:hover,
       .invert a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .invert-hover.has-post-thumbnail .btn,
       .invert-item.has-post-thumbnail .comments-button,
@@ -1494,7 +1595,7 @@
         .invert.default-item
         .comments-button {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .invert-hover.has-post-thumbnail .btn:hover,
       .invert-item.has-post-thumbnail .comments-button:hover,
@@ -1510,7 +1611,7 @@
       } /* Image Post Format */
       .post_format-post-format-image .post-thumbnail__link:before {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       } /* Gallery Post Format */
       .post_format-post-format-gallery .swiper-button-prev,
       .post_format-post-format-gallery .swiper-button-next {
@@ -1522,10 +1623,10 @@
       } /* Link Post Format */
       .post_format-post-format-quote .post-format-quote {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .post_format-post-format-quote .post-format-quote:before {
-        color: #fab837;
+        color: #ef9410;
         background-color: #ffffff;
       } /* Post Author */
       .post-author__title a:hover {
@@ -1553,11 +1654,11 @@
       }
       .single-header-8.invert a:hover,
       .single-header-10.invert a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .single-header-3 a.comments-button:hover,
       .single-header-10 a.comments-button:hover {
-        color: #fab837;
+        color: #ef9410;
       } /* #Post */
       .posts-list--default .format-standard.no-thumb .posts-list__item-content,
       .posts-list--default .format-status.no-thumb .posts-list__item-content,
@@ -1590,7 +1691,7 @@
         background: #42474c;
       }
       .banter-loader__box:nth-child(odd):before {
-        background: #fab837;
+        background: #ef9410;
       } /* Logo */
       h1.site-logo .site-logo__link,
       h1.site-logo .site-logo__link:hover {
@@ -1598,7 +1699,7 @@
       }
       h1.site-logo .site-logo__link span,
       h1.site-logo .site-logo__link:hover span {
-        color: #fab837;
+        color: #ef9410;
       } /* Page title */
       .page-title {
         font-style: normal;
@@ -1623,12 +1724,12 @@
       .error404 .site-content hr {
         width: 18px;
         height: 3px;
-        background-color: #fab837;
+        background-color: #ef9410;
         margin: 0 auto;
       }
       .error404 .site-content .error {
         font-size: 130px;
-        color: #fab837;
+        color: #ef9410;
         font-family: Archivo, sans-serif;
       }
       .error404 p {
@@ -1677,7 +1778,7 @@
       .list-style-v5 .grid-item-wrap.invert .byline a,
       .list-style-v5 .grid-item-wrap.invert .comments-link,
       .list-style-v5 .grid-item-wrap.invert .entry-title a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .list-style-v5 .grid-item-wrap.invert .posted-on a:hover,
       .list-style-v5 .grid-item-wrap.invert .cat-links a:hover,
@@ -1731,7 +1832,7 @@
       .list-style-v6 .grid-item-wrap.invert .byline a:hover,
       .list-style-v6 .grid-item-wrap.invert .comments-link:hover,
       .list-style-v6 .grid-item-wrap.invert .entry-title a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .list-style-v7 .grid-item-wrap.invert .posted-on,
       .list-style-v7 .grid-item-wrap.invert .cat-links,
@@ -1775,8 +1876,8 @@
         .posts-list__item.grid-item
         .grid-item-wrap
         .btn:hover {
-        color: #fab837;
-        border-color: #fab837;
+        color: #ef9410;
+        border-color: #ef9410;
       }
       .posts-list.list-style-v10
         .grid-item-inner
@@ -1788,7 +1889,7 @@
         .grid-item-inner
         .space-between-content
         .comments-link:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .posts-list.list-style-v10
         .posts-list__item.justify-item
@@ -1803,7 +1904,7 @@
         .entry-title
         a:hover {
         color: #ffffff;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .posts-list.list-style-v5
         .posts-list__item.justify-item
@@ -1883,14 +1984,14 @@
       .list-style-v4 .justify-item-inner.invert .byline a:hover,
       .list-style-v4 .justify-item-inner.invert .comments-link:hover,
       .list-style-v4 .justify-item-inner.invert .entry-title a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .posts-list.list-style-v5
         .justify-item
         .justify-item-wrap
         .entry-footer
         .comments-link:hover {
-        border-color: #fab837;
+        border-color: #ef9410;
       }
       .list-style-v4 .justify-item-inner.invert .btn:hover,
       .list-style-v6 .justify-item-wrap.invert .btn:hover,
@@ -1907,8 +2008,8 @@
         .justify-item-wrap
         .entry-footer
         .btn:hover {
-        color: #fab837;
-        border-color: #fab837;
+        color: #ef9410;
+        border-color: #ef9410;
       }
       .widget_archive a,
       .widget_categories a {
@@ -1923,7 +2024,7 @@
         color: #222931;
       }
       .widget-title:before {
-        background: #fab837;
+        background: #ef9410;
       }
       .widget_recent_entries .post-date,
       .widget_recent_comments .recentcomments {
@@ -1947,14 +2048,14 @@
         color: #222931;
       }
       .widget_tag_cloud .tag-cloud-link:hover {
-        background: #fab837;
+        background: #ef9410;
       } /* #Widget Calendar */
       .widget_calendar thead,
       .widget_calendar tbody {
         color: /* Variable not found */ ;
       }
       .widget_calendar caption {
-        color: #fab837;
+        color: #ef9410;
         background-color: #222931;
         font-family: Archivo, sans-serif;
         font-size: /* Variable not found */ ;
@@ -1974,7 +2075,7 @@
       }
       .widget_calendar tbody td a {
         color: #222931;
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .widget_calendar tbody td a:hover {
         color: #ffffff;
@@ -1987,13 +2088,13 @@
         color: #ffffff;
       }
       .widget_calendar tfoot a:hover:before {
-        color: #fab837;
+        color: #ef9410;
       }
       .widget_nav_menu ul li a:hover {
         color: #aeb6be;
       }
       .widget_nav_menu ul li a::before {
-        color: #fab837;
+        color: #ef9410;
       }
       .widget_nav_menu ul li a:hover::before {
         color: #222931;
@@ -2008,15 +2109,15 @@
         color: #42474c;
       }
       .widget_nav_menu ul.menu li a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       .widget_nav_menu ul.menu li a:hover:before {
-        color: #fab837;
+        color: #ef9410;
       } /* Preloader */
       .jet-smart-listing-wrap.jet-processing + div.jet-smart-listing-loading,
       div.wpcf7 .ajax-loader {
-        border-top-color: #fab837;
-        border-right-color: #fab837;
+        border-top-color: #ef9410;
+        border-right-color: #ef9410;
       } /*--------------------------------------------------------------## Ecwid Plugin Styles--------------------------------------------------------------*/ /* Product Title, Product Price amount */
       html#ecwid_html
         body#ecwid_body
@@ -2479,9 +2580,9 @@
         .ec-store
         .form-control--primary
         .form-control__button {
-        border-color: #fab837;
+        border-color: #ef9410;
         background-color: transparent;
-        color: #fab837;
+        color: #ef9410;
       } /* Product Add To Cart button hover state, Product Category active state */
       html#ecwid_html
         body#ecwid_body
@@ -2502,8 +2603,8 @@
         .horizontal-menu-container.horizontal-desktop
         .horizontal-menu-item.horizontal-menu-item--active
         > a {
-        border-color: #fab837;
-        background-color: #fab837;
+        border-color: #ef9410;
+        background-color: #ef9410;
         color: #ffffff;
       } /* Black Product Add To Cart button normal state */
       html#ecwid_html
@@ -2515,8 +2616,8 @@
         .grid-product--dark
         .form-control--secondary
         .form-control__button {
-        border-color: #fab837;
-        background-color: #fab837;
+        border-color: #ef9410;
+        background-color: #ef9410;
         color: #ffffff;
       } /* Black Product Add To Cart button normal state */
       html#ecwid_html
@@ -2530,7 +2631,7 @@
         .form-control__button:hover {
         border-color: #ffffff;
         background-color: #ffffff;
-        color: #fab837;
+        color: #ef9410;
       } /* Product Add To Cart button small label */
       html#ecwid_html
         body#ecwid_body
@@ -2677,7 +2778,7 @@
         --e-global-color-7bd98ed0: #23a455;
         --e-global-color-7dba6a08: #000;
         --e-global-color-4ae76faa: #fff;
-        --e-global-color-79a4e107: #fab837;
+        --e-global-color-79a4e107: #ef9410;
         --e-global-color-5d914c67: #21252b;
         --e-global-typography-primary-font-family: 'Roboto';
         --e-global-typography-primary-font-weight: 600;
@@ -2890,7 +2991,7 @@
       }
       .elementor-3033 .elementor-element.elementor-element-0ba19d0 {
         --divider-border-style: solid;
-        --divider-color: #fab837;
+        --divider-color: #ef9410;
         --divider-border-width: 3px;
       }
       .elementor-3033
@@ -2966,7 +3067,7 @@
       }
       .elementor-3033 .elementor-element.elementor-element-541cdf1 {
         --divider-border-style: solid;
-        --divider-color: #fab837;
+        --divider-color: #ef9410;
         --divider-border-width: 3px;
       }
       .elementor-3033
@@ -3025,7 +3126,7 @@
       .elementor-3033
         .elementor-element.elementor-element-4ff6f38
         .jet-button__plane-normal {
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .elementor-3033
         .elementor-element.elementor-element-4ff6f38
@@ -3364,18 +3465,18 @@
         .elementor-element.elementor-element-bb6ecdc
         .menu-item:hover
         > .menu-item-link-top {
-        color: #fab837;
+        color: #ef9410;
       }
       .elementor-2551
         .elementor-element.elementor-element-bb6ecdc
         .menu-item.current-menu-item
         .menu-item-link-top {
-        color: #fab837;
+        color: #ef9410;
       }
       .elementor-2551
         .elementor-element.elementor-element-bb6ecdc
         .jet-nav__sub {
-        background-color: #fab837;
+        background-color: #ef9410;
         padding: 20px 20px 20px 20px;
       }
       .elementor-2551
@@ -3438,7 +3539,7 @@
         .elementor-element.elementor-element-9083b27
         .jet-mobile-menu__container
         .jet-mobile-menu__container-inner {
-        background-color: #fab837;
+        background-color: #ef9410;
       }
       .elementor-2551
         .elementor-element.elementor-element-9083b27
@@ -3806,13 +3907,13 @@
         .elementor-element.elementor-element-7a597b8
         .elementor-social-icon:hover
         i {
-        color: #fab837;
+        color: #ef9410;
       }
       .elementor-2541
         .elementor-element.elementor-element-7a597b8
         .elementor-social-icon:hover
         svg {
-        fill: #fab837;
+        fill: #ef9410;
       }
       .elementor-2541
         .elementor-element.elementor-element-ee895c3:not(
@@ -3835,7 +3936,7 @@
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
       }
       .elementor-2541 .elementor-element.elementor-element-ee895c3 a:hover {
-        color: #fab837;
+        color: #ef9410;
       }
       @media (max-width: 1024px) {
         .elementor-2541
@@ -4984,7 +5085,7 @@
                               <h1
                                 class="elementor-heading-title elementor-size-default"
                               >
-                              CITY LIFE APARTMENT(KAZANCHIS)
+                              CITY LIFE APARTMENT (KAZANCHIS)
                               </h1>
                             </div>
                           </div>
@@ -4995,377 +5096,51 @@
                             data-settings='{"columns":"1","columns_tablet":"1"}'
                             data-widget_type="jet-portfolio.default"
                           >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-jet-portfolio jet-elements">
-                                <div
-                                  class="jet-portfolio layout-type-grid preset-type-3 layout-desktop-column-1 layout-tablet-column-1"
-                                  data-settings='{"layoutType":"grid","perPage":6}'
-                                >
-                                  <div class="jet-portfolio__list">
-                                    <article
-                                      class="jet-portfolio__item visible-status item-loaded"
-                                      data-slug='{"0":"all"}'
-                                    >
-                                      <div
-                                        class="jet-portfolio__inner"
-                                        style="opacity: 1; transform: scale(1)"
-                                      >
-                                        <a
-                                          class="jet-portfolio__link"
-                                          href="./assets/CITY LIFE APARTMENT(KAZANCHIS)/2.2.jpg"
-                                          data-elementor-open-lightbox="yes"
-                                          data-elementor-lightbox-slideshow="481165d-all"
-                                        >
-                                          <div class="jet-portfolio__image">
-                                            <img
-                                              decoding="async"
-                                              class="jet-portfolio__image-instance"
-                                              src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/2.2.jpg"
-                                              width="1170"
-                                              height="800"
-                                              alt="Shreveport, Bossier City"
-                                              loading="lazy"
-                                            />
-
-                                            <div class="jet-portfolio__cover">
-                                              <span class="jet-elements-icon"
-                                                ><i
-                                                  class="fa fa-plus"
-                                                  aria-hidden="true"
-                                                ></i
-                                              ></span>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </article>
-                                    <article
-                                    class="jet-portfolio__item visible-status item-loaded"
-                                    data-slug='{"0":"all"}'
-                                  >
-                                    <div
-                                      class="jet-portfolio__inner"
-                                      style="opacity: 1; transform: scale(1)"
-                                    >
-                                      <a
-                                        class="jet-portfolio__link"
-                                        href="./assets/CITY LIFE APARTMENT(KAZANCHIS)/3.1.jpg"
-                                        data-elementor-open-lightbox="yes"
-                                        data-elementor-lightbox-slideshow="481165d-all"
-                                      >
-                                        <div class="jet-portfolio__image">
-                                          <img
-                                            decoding="async"
-                                            class="jet-portfolio__image-instance"
-                                            src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/3.1.jpg"
-                                            width="1170"
-                                            height="800"
-                                            alt="Shreveport, Bossier City"
-                                            loading="lazy"
-                                          />
-
-                                          <div class="jet-portfolio__cover">
-                                            <span class="jet-elements-icon"
-                                              ><i
-                                                class="fa fa-plus"
-                                                aria-hidden="true"
-                                              ></i
-                                            ></span>
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </article>
-
-                                  <article
-                                  class="jet-portfolio__item visible-status item-loaded"
-                                  data-slug='{"0":"all"}'
-                                >
-                                  <div
-                                    class="jet-portfolio__inner"
-                                    style="opacity: 1; transform: scale(1)"
-                                  >
-                                    <a
-                                      class="jet-portfolio__link"
-                                      href="./assets/CITY LIFE APARTMENT(KAZANCHIS)/3.2.jpg"
-                                      data-elementor-open-lightbox="yes"
-                                      data-elementor-lightbox-slideshow="481165d-all"
-                                    >
-                                      <div class="jet-portfolio__image">
-                                        <img
-                                          decoding="async"
-                                          class="jet-portfolio__image-instance"
-                                          src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/3.2.jpg"
-                                          width="1170"
-                                          height="800"
-                                          alt="Shreveport, Bossier City"
-                                          loading="lazy"
-                                        />
-
-                                        <div class="jet-portfolio__cover">
-                                          <span class="jet-elements-icon"
-                                            ><i
-                                              class="fa fa-plus"
-                                              aria-hidden="true"
-                                            ></i
-                                          ></span>
-                                        </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                </article>
-
-                                <article
-                                class="jet-portfolio__item visible-status item-loaded"
-                                data-slug='{"0":"all"}'
-                              >
-                                <div
-                                  class="jet-portfolio__inner"
-                                  style="opacity: 1; transform: scale(1)"
-                                >
-                                  <a
-                                    class="jet-portfolio__link"
-                                    href="./assets/CITY LIFE APARTMENT(KAZANCHIS)/4.4.jpg"
-                                    data-elementor-open-lightbox="yes"
-                                    data-elementor-lightbox-slideshow="481165d-all"
-                                  >
-                                    <div class="jet-portfolio__image">
-                                      <img
-                                        decoding="async"
-                                        class="jet-portfolio__image-instance"
-                                        src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/4.4.jpg"
-                                        width="1170"
-                                        height="800"
-                                        alt="Shreveport, Bossier City"
-                                        loading="lazy"
-                                      />
-
-                                      <div class="jet-portfolio__cover">
-                                        <span class="jet-elements-icon"
-                                          ><i
-                                            class="fa fa-plus"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </div>
-                                    </div>
-                                  </a>
-                                </div>
-                              </article>
-                              <article
-                              class="jet-portfolio__item visible-status item-loaded"
-                              data-slug='{"0":"all"}'
-                            >
-                              <div
-                                class="jet-portfolio__inner"
-                                style="opacity: 1; transform: scale(1)"
-                              >
-                                <a
-                                  class="jet-portfolio__link"
-                                  href="./assets/CITY LIFE APARTMENT(KAZANCHIS)/5.1.jpg"
-                                  data-elementor-open-lightbox="yes"
-                                  data-elementor-lightbox-slideshow="481165d-all"
-                                >
-                                  <div class="jet-portfolio__image">
-                                    <img
-                                      decoding="async"
-                                      class="jet-portfolio__image-instance"
-                                      src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/5.1.jpg"
-                                      width="1170"
-                                      height="800"
-                                      alt="Shreveport, Bossier City"
-                                      loading="lazy"
-                                    />
-
-                                    <div class="jet-portfolio__cover">
-                                      <span class="jet-elements-icon"
-                                        ><i
-                                          class="fa fa-plus"
-                                          aria-hidden="true"
-                                        ></i
-                                      ></span>
-                                    </div>
-                                  </div>
-                                </a>
+                          <main class="main">
+                            <section class="gallery">
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/4.4.jpg" alt="Construction Progress" />
                               </div>
-                            </article>
-                                  </div>
-                                </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/3.2.jpg" alt="Construction Progress" />
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-76bbd45 elementor-section-boxed elementor-section-height-default elementor-section-height-default jet-parallax-section"
-                data-id="76bbd45"
-                data-element_type="section"
-                data-settings='{"jet_parallax_layout_list":[{"jet_parallax_layout_image":{"url":"","id":"","size":""},"_id":"fcd2a71","jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'
-              >
-                <div
-                  class="jet-parallax-section__layout elementor-repeater-item-fcd2a71 jet-parallax-section__scroll-layout is-mac"
-                >
-                  <div
-                    class="jet-parallax-section__image"
-                    style="
-                      background-position: 50% 50%;
-                      background-image: url('');
-                    "
-                  ></div>
-                </div>
-                <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                    <div
-                      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a1e8e18"
-                      data-id="a1e8e18"
-                      data-element_type="column"
-                    >
-                      <div
-                        class="elementor-column-wrap elementor-element-populated"
-                      >
-                        <div class="elementor-widget-wrap">
-                          <div
-                            class="elementor-element elementor-element-29bdcdf elementor-widget elementor-widget-heading is-mac"
-                            data-id="29bdcdf"
-                            data-element_type="widget"
-                            data-widget_type="heading.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <h2
-                                class="elementor-heading-title elementor-size-default"
-                              >
-                                Description
-                              </h2>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-0ba19d0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider is-mac"
-                            data-id="0ba19d0"
-                            data-element_type="widget"
-                            data-widget_type="divider.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                <span class="elementor-divider-separator">
-                                </span>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/3.1.jpg" alt="Construction Progress" />
                               </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-aa24a91 elementor-widget elementor-widget-text-editor is-mac"
-                            data-id="aa24a91"
-                            data-element_type="widget"
-                            data-widget_type="text-editor.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div
-                                class="elementor-text-editor elementor-clearfix"
-                              >
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolorum cumque molestias odit.
-                                Ab molestiae nisi eaque sequi! Excepturi sunt
-                                unde commodi illo neque exercitationem
-                                laboriosam culpa suscipit, dicta numquam iste.
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/2.2.jpg" alt="Construction Progress" />
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6337138"
-                      data-id="6337138"
-                      data-element_type="column"
-                    >
-                      <div
-                        class="elementor-column-wrap elementor-element-populated"
-                      >
-                        <div class="elementor-widget-wrap">
-                          <div
-                            class="elementor-element elementor-element-bb8462e elementor-widget elementor-widget-heading is-mac"
-                            data-id="bb8462e"
-                            data-element_type="widget"
-                            data-widget_type="heading.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <h3
-                                class="elementor-heading-title elementor-size-default"
-                              >
-                                Project details
-                              </h3>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-541cdf1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider is-mac"
-                            data-id="541cdf1"
-                            data-element_type="widget"
-                            data-widget_type="divider.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                <span class="elementor-divider-separator">
-                                </span>
+                             
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/kazanchise-ex1.jpeg" alt="3D Design" />
                               </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-d96ee66 elementor-widget elementor-widget-text-editor is-mac"
-                            data-id="d96ee66"
-                            data-element_type="widget"
-                            data-widget_type="text-editor.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div
-                                class="elementor-text-editor elementor-clearfix"
-                              >
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/kazanchise-ex2.jpeg" alt="Construction Progress" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-01.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-02.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-03.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-04.jpg" alt="Interior View" />
+                              </div>
+                              <div class="gallery__image">
+                                <img src="./assets/CITY LIFE APARTMENT(KAZANCHIS)/intirior/city aapartment-05.jpg" alt="Interior View" />
+                              </div>
+                            </section>
+                            <section class="details">
+                              <h2>Project Details</h2>
                               <p>
-                                <span style="color: #222931">Client:</span>
-                                Bamacon Real Estate<br />
-                              </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-4ff6f38 elementor-widget__width-inherit elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-jet-button is-mac"
-                            data-id="4ff6f38"
-                            data-element_type="widget"
-                            data-widget_type="jet-button.default"
-                          >
-                            <div class="elementor-widget-container">
-                              <div class="elementor-jet-button jet-elements">
-                                <div class="jet-button__container">
-                                  <a
-                                    class="jet-button__instance jet-button__instance--icon-left hover-effect-1"
-                                    href="#"
-                                  >
-                                    <div
-                                      class="jet-button__plane jet-button__plane-normal"
-                                    ></div>
-                                    <div
-                                      class="jet-button__plane jet-button__plane-hover"
-                                    ></div>
+                                Featuring City Life Apartment, a striking Kazanchis development. This contemporary structure has twenty-three stories above ground, a ground floor, four basement levels, and an intriguing rooftop garden. City Life Apartments are designed to provide a dynamic urban lifestyle. They have easy access to basement parking, commercial floors full of shops and recreational activities, and a range of apartment types, including one-, two-, and three-bedroom configurations. This project, which is currently for sale, offers a rare chance to live modern in one of Addis Ababa's busiest neighborhoods. Don't pass up the opportunity to enjoy City Life Apartment's energy and convenience.
 
-                                    <div
-                                      class="jet-button__state jet-button__state-hover"
-                                    >
-                                      <span
-                                        class="jet-button__icon jet-elements-icon"
-                                        ><i
-                                          aria-hidden="true"
-                                          class="fas fa-link"
-                                        ></i></span
-                                      ><span class="jet-button__label"
-                                        >Project link</span
-                                      >
-                                    </div>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
+                              </p>
+                            </section>
+                          </main>
                           </div>
                         </div>
                       </div>
@@ -5373,10 +5148,11 @@
                   </div>
                 </div>
               </section>
+            
             </div>
           </div>
         </div>
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.5579496651567!2d38.773877!3d9.012758999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDAnNDUuOSJOIDM4wrA0NicyNi4wIkU!5e0!3m2!1sen!2set!4v1718011197523!5m2!1sen!2set" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.5579496651567!2d38.773877!3d9.012758999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDAnNDUuOSJOIDM4wrA0NicyNi4wIkU!5e0!3m2!1sen!2set!4v1718011197523!5m2!1sen!2set" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <footer id="jet-theme-core-footer" class="jet-theme-core-location jet-theme-core-location--footer-location">
           <div class="jet-theme-core-location__inner">
             <div data-elementor-type="jet_footer" data-elementor-id="2541" class="elementor elementor-2541">
@@ -6134,6 +5910,34 @@
         },
       };
       /* ]]> */
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.gallery__image img');
+
+        images.forEach((image) => {
+          image.addEventListener('click', () => {
+            const src = image.getAttribute('src');
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+
+            const modalContent = `
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="${src}" alt="Image" style="height:">
+          </div>
+        `;
+
+            modal.innerHTML = modalContent;
+            document.body.appendChild(modal);
+
+            const closeBtn = modal.querySelector('.close-btn');
+            closeBtn.addEventListener('click', () => {
+              document.body.removeChild(modal);
+            });
+          });
+        });
+      });
     </script>
     <script
       type="text/javascript"
